@@ -31,3 +31,7 @@ def create_posts(post: Post):
     post_dict['id'] = randrange(1,1000000)
     my_posts.append(post_dict)
     return {"data": post_dict} 
+
+
+@app.get("/posts/{id}")
+def get_post
